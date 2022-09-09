@@ -1,6 +1,6 @@
 :root {
   font-family: sans-serif;
-  font-size: calc(1em + 2vmin + 2vmax);
+  font-size: calc(1em + 1vmin + 1vmax);
   line-height: 1.6;
 }
 
@@ -21,10 +21,24 @@
   margin: auto;
 }
 
+h1 {
+
+  transform: perspective(100%);
+  font: 1.6em monospace;
+}
+
 .pad {
   padding: 1ex;
 }
 
 .wall {
   min-height: 100vh;
+}
+
+.ess { font-style: oblique }
+.ess s { font-size: 0 }
+.ess::before { content: "$" }
+
+.shell {
+  max-width: 61vw;
 }
