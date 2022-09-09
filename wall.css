@@ -35,10 +35,10 @@ h1 {
   min-height: 100vh;
 }
 
-.ess { font-style: oblique }
-.ess s { font-size: 0 }
-.ess::before { content: "$" }
-
 .shell {
   max-width: 61vw;
 }
+
+.ess { font-style: oblique }
+.ess:lang(en) s { font-size: 0 }
+.ess:lang(en)::before { content: "$" }
