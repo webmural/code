@@ -1,24 +1,31 @@
-::selection {
-  background-color: #bae;
-  color: midnightblue;
-}
-
-:root {
-  color: #318;
-  background-color: #529;
-  background-image: linear-gradient(skyblue, deepskyblue);
-}
-
-@media (prefers-color-scheme: dar) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #318;
-    background-color: #529;
+    color: #528;
+    background-color: pink;
     background-image: linear-gradient(pink, violet);
+  }
+
+  ::selection {
+    background: #528;
+    color: pink;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  ::selection {
+    background: #528;
+    color: powderblue;
+  }
+
+  :root {
+    color: #528;
+    background-color: skyblue;
+    background-image: linear-gradient(powderblue, skyblue);
   }
 }
 
 :any-link {
-  color: #529;
+  color: inherit;
 }
 
 :focus {
